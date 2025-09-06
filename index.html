@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>架空ポケモン図鑑生成AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🌟 架空ポケモン図鑑ジェネレーター</h1>
+
+    <section class="form-box">
+      <label>タイプ1
+        <select id="type1"> 
+          <option>ノーマル</option><option>ほのお</option><option>みず</option>
+          <option>でんき</option><option>くさ</option><option>こおり</option>
+          <option>かくとう</option><option>どく</option><option>じめん</option>
+          <option>ひこう</option><option>エスパー</option><option>むし</option>
+          <option>いわ</option><option>ゴースト</option><option>ドラゴン</option>
+          <option>あく</option><option>はがね</option><option>フェアリー</option>
+        </select>
+      </label>
+
+      <label>タイプ2
+        <select id="type2">
+          <option>なし</option>
+          <option>ノーマル</option><option>ほのお</option><option>みず</option>
+          <option>でんき</option><option>くさ</option><option>こおり</option>
+          <option>かくとう</option><option>どく</option><option>じめん</option>
+          <option>ひこう</option><option>エスパー</option><option>むし</option>
+          <option>いわ</option><option>ゴースト</option><option>ドラゴン</option>
+          <option>あく</option><option>はがね</option><option>フェアリー</option>
+        </select>
+      </label>
+
+      <label>イメージ
+        <input id="image" type="text" placeholder="例: 電気+ねずみ" />
+      </label>
+
+      <label>その他
+        <input id="other" type="text" placeholder="例: アローラのすがた" />
+      </label>
+
+      <div class="actions">
+        <button id="generateBtn">確定</button>
+      </div>
+    </section>
+
+    <section id="result" class="result-area">
+      <div id="basic" class="card">ここに基本データが表示されます。</div>
+      <div id="desc" class="card">図鑑説明がここに表示されます。</div>
+      <div id="ability" class="card">特性の解説がここに表示されます。</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
